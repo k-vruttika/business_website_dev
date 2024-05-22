@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to the contact page */
+        .contact-us-content {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #FFF8DC; /* Light brown background */
+        }
+
+        .contact-us-content h2 {
+            color: #8B4513; /* Dark brown */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-us-content p {
+            color: #333;
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        .contact-us-content form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-us-content input,
+        .contact-us-content textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #8B4513;
+            border-radius: 5px;
+        }
+
+        .contact-us-content button {
+            background-color: #8B4513;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .contact-us-content button:hover {
+            background-color: #A0522D;
+        }
+
+        .contact-details {
+            margin-top: 40px;
+        }
+
+        .contact-details h3 {
+            color: #8B4513;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-details p {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-us-content">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.</p>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-details">
+                <h3>Contact Information</h3>
+                <p><strong>Address:</strong> 123 Main Street, Anytown, India</p>
+                <p><strong>Phone:</strong> (91) 890-456-7890</p>
+                <p><strong>Email:</strong> info@webservbusiness.com</p>
+                <h3>Office Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 10:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Webserv Small Business. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
